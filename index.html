@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome - Formulário de Devolução</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="jquery.mask.min.js"></script>
+</head>
+<body class="bg-dark">
+    <header class="text-center text-light pt-4 pl-4 pr-4">
+        <div class="container">
+            <h1>LOGO</h1>
+        </div>
+    </header>
+
+    <main class="text-center container">
+    <form action="enviar.php" method="post">    
+        <section class="container bg-white rounded p-2 mb-4">
+            <h2 class="font-weight-bold">Formulário de Devolução</h2>
+            <h5>Laboris laborum fugiat nisi cupidatat.</h5>
+            <div class="row  dadosCadastrais">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="nome" id="nome" aria-describedby="nomedoSolicitante" placeholder="Nome do solicitante" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="razaoSocial" id="razaoSocial" aria-describedby="razaoSocial" placeholder="Razão Social" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control cnpj" name="cnpj" id="cnpj" aria-describedby="cnpj" placeholder="CNPJ" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" name="inscricaoEstadual" id="inscricaoEstadual" aria-describedby="inscricaoEstadual" placeholder="Inscrição estadual" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="cep" id="cep" aria-describedby="cep" placeholder="CEP: 00000-000" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="rua" id="rua" aria-describedby="rua" placeholder="Rua" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" name="numero" id="numero" aria-describedby="numero" placeholder="nº" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="bairro" id="bairro" aria-describedby="bairro" placeholder="Bairro" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="cidade" id="cidade" aria-describedby="cidade" placeholder="Cidade" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" maxlength="2" class="form-control" name="uf" id="uf" aria-describedby="uf" placeholder="UF" style="text-transform: uppercase;" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control telefone" name="telefone" id="telefone" name="telefone" aria-describedby="telefone" placeholder="Telefone: (00) 0000-00000" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="E-mail" required>
+                </div>
+                <div class="col-12 custom-input">
+                    <select class="form-control" name="cfop" id="cfop" required>
+                        <option value="" selected>Nulla in aliqua officia</option>
+                        <option value="0000">0000 (Irure dolore dolor)</option>
+                        <option value="1111">1111 (Sint eu irure ut)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-white rounded p-2 mb-4">
+            <h3>Descrição do produto</h3>
+            <h5 class="mb-3">Nulla labore ad dolore incididunt incididunt consectetur sint.</h5>
+                <div id="produto">
+                    <div id="produto-container" class="mb-4">
+                        <div class="shadow-sm bg-light border rounded p-2">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Cód. do produto</span>
+                                </div>
+                                <input type="text" name="codProduto[]" id="codProduto" class="form-control" placeholder="0000" required>
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Data de emissão</span>
+                                </div>
+                                <input type="text" name="dataProduto[]" id="dataProduto" class="form-control dataProduto" placeholder="00/00/0000" required>
+                            </div>
+            
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Nota fiscal</span>
+                                </div>
+                                <input type="text" name="nfGlobalPlastic[]" id="nfGlobalPlastic" class="form-control" placeholder="123456" required>
+                            </div>
+            
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Valor</span>
+                                </div>
+                                <input type="text" name="valorNota[]" id="valorNota" class="form-control valorNota" placeholder="R$ 000,00" required>
+                            </div>
+            
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Quantidade</span>
+                                </div>
+                                <input type="text" name="qtd[]" id="qtd" class="form-control" placeholder="00" required>
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">Defeito</span>
+                                </div>
+                                <input type="text" name="defeito[]" id="defeito" class="form-control" placeholder="Descreva o defeito do produto" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <span class="btn btn-primary btn-block mt-3 mb-3" id="addProduto">Adicionar mais itens</span>
+                
+            <div>
+                <p>
+                    <small>
+                        Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+                    </small>
+                </p>
+            </div>
+        </section>
+
+        <section class="container bg-white rounded p-2 mb-4">
+            <h3>Condições para Devolução</h3>
+            <h6>Nulla eu amet Lorem ipsum non duis tempor deserunt.</h6>
+            <ol class="text-left rounded">
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, libero quam sint iusto consectetur, accusamus dolorem veniam repudiandae culpa distinctio magni? Ad, asperiores nihil. Est repudiandae id suscipit ea accusantium.</li>
+                <li>Tenetur perferendis accusantium quisquam reprehenderit unde totam similique soluta vel veniam, voluptatum, dicta, ipsum aspernatur fugit incidunt! Molestias exercitationem, sit at pariatur minus perspiciatis. Illum ipsam dicta voluptate sed assumenda?</li>
+                <li>Architecto, illo? Deserunt consequuntur quas nobis molestias ipsum, velit distinctio sit sequi. Autem nihil qui illo. Enim, ut maiores. Aliquam pariatur perferendis nostrum qui doloribus atque consequatur quisquam officiis tempora.</li>
+                <li>Optio, labore? A, enim. Eum placeat, distinctio aspernatur id voluptas sapiente cum nemo laboriosam, officia labore quidem non impedit, deserunt suscipit a earum sunt magnam officiis laborum quaerat recusandae perferendis?</li>
+                <li>Id, dolorum pariatur officia alias laborum ut voluptatem ratione quam saepe, architecto praesentium impedit tempora ipsa rerum at vitae autem repellat in a debitis corrupti dolorem modi amet ducimus. Laudantium.</li>
+                <li>Iusto, voluptatibus unde ad at harum perferendis temporibus dignissimos blanditiis architecto pariatur repellendus quisquam maiores in, magni nesciunt! Temporibus laborum nihil earum cum iusto, incidunt ullam tempora eveniet accusamus nam!</li>
+                <li>Ab, reprehenderit nesciunt deserunt odit molestiae quas et quia. Enim architecto eligendi deleniti deserunt, facilis porro quasi, in expedita cum perspiciatis temporibus cupiditate laudantium laboriosam ipsam at explicabo possimus reiciendis?</li>
+                <li>Aliquam hic ipsa quibusdam, totam eius, id architecto, aperiam debitis saepe odit voluptatem maxime reprehenderit omnis. Ducimus, quibusdam quod, dolore perferendis, ad reprehenderit itaque consequuntur ex asperiores nisi sit alias.</li>
+                <li>Laudantium a deserunt libero quibusdam ut minima fuga ducimus provident odio illum qui dolor aut id temporibus amet error quo accusantium suscipit sint dolores, consequuntur repellendus quia nam? Alias, officia!</li>
+                <li>Vel quia mollitia neque odit iure dolore repudiandae. Quo dolor, tenetur nisi, fugiat amet aut quasi nobis praesentium nihil suscipit adipisci libero debitis sequi culpa quae nemo ducimus eos quod.</li>
+                <li>Sed dignissimos quisquam quidem laboriosam inventore enim, distinctio sunt natus ratione. Iure maiores culpa omnis possimus tempore quo. Possimus vel harum rem odio architecto! Itaque at maiores quibusdam aspernatur ipsum?</li>
+                <li>Ipsum aliquid, temporibus delectus recusandae, ad asperiores quasi itaque ullam et aperiam non repellendus perspiciatis nemo ipsa laboriosam. Dignissimos, similique nulla! Eaque totam modi natus distinctio porro labore accusamus minus.</li>
+                <li>At qui debitis excepturi, dignissimos repellat vero, iure id aliquid in ut corporis fuga sint deleniti aut et. Neque, accusamus architecto quis culpa eaque porro doloremque aliquam harum. Doloremque, voluptates!</li>
+                <li>Deserunt nesciunt itaque suscipit, ipsum, architecto cupiditate magni, aspernatur fuga officia explicabo saepe eveniet vitae ullam ipsam repellendus ea! Exercitationem esse corporis dolorum sapiente, quae magnam nobis quo facere autem?</li>
+                <li>Magnam dolor unde numquam? Omnis ipsum hic quam neque. Recusandae laudantium eligendi animi nisi, optio unde sint labore non voluptatibus quo culpa eveniet harum distinctio sunt ab? Consectetur, sed accusantium.</li>
+                <li>Adipisci, impedit dolores. Odit totam pariatur perspiciatis, voluptatibus fugit ipsum aliquid provident quidem expedita optio minus iusto, ea sit quos. Saepe consequuntur voluptas repellendus similique, incidunt soluta explicabo iure excepturi.</li>
+            </ol>
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                <label class="custom-control-label" for="customCheck1">Declaro que li e estou de acordo com as condições.</label>
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR FORMULÁRIO" id="enviar" class="btn btn-lg btn-block btn-success">
+            </div>
+        </section>
+    </form>
+    </main>
+
+    <footer class="text-center mb-4 text-white"> 
+        © Copyright
+    </footer>
+</body>
+</html>
