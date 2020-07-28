@@ -66,7 +66,7 @@ $mail->Username = 'your@email.com';
 $mail->Password = 'password';
 $mail->From = 'your@email.com.br'; 
 $mail->FromName = 'Form name';
-$mail->AddAddress('towhon@mail.com.br', 'Name'); 
+$mail->AddAddress('towhom@mail.com.br', 'Name'); 
 $mail->IsHTML(true); 
 $mail->CharSet = 'utf-8'; 
 $mail->Subject  = 'Subject - Name';
