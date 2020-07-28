@@ -1,5 +1,5 @@
 <h1>Formulário de devolução de produtos</h1>
-desenvolvido em <b>HTML, CSS, javaScript e PHP</b>
+Desenvolvido em <b>HTML, CSS, javaScript e PHP</b>
 
 A aplicação esta funcionando perfeitamente, tanto para mobile como desktop. <br>
 Só necessita ser acrescentando as informações corretas no "enviar.php". <br>
