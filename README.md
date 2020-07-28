@@ -1,10 +1,10 @@
-<b>#devolution-form</b>
+<h1>devolution-form</h1>
 
 Formulário de devolução de produtos
-desenvolvido em HTML, CSS, javaScript e PHP
+desenvolvido em <b>HTML, CSS, javaScript e PHP</b>
 
-A aplicação esta funcionando perfeitamente, tanto para mobile como desktop.
-Só necessita ser acrescentando as informações corretas no "enviar.php".
+A aplicação esta funcionando perfeitamente, tanto para mobile como desktop. <br>
+Só necessita ser acrescentando as informações corretas no "enviar.php". <br>
 
 Layout construido a partir do Bootstrap <br>
 
