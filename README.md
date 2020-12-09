@@ -1,13 +1,9 @@
-<h1>Formulário de devolução de produtos</h1>
-Desenvolvido em <b>HTML, CSS, JavaScript e PHP</b>
-
-A aplicação esta funcionando perfeitamente, tanto para mobile como desktop. <br>
-Só necessita ser acrescentando as informações corretas no "enviar.php". <br>
+<h1>Return Form</h1>
+Developed in <b>HTML, CSS, JavaScript and PHP</b>
 
 ![](screencapture-devolution-form.png)
 
-
-Layout construido a partir do Bootstrap <br>
+Builted using Bootstrap <br>
 jQuery Mask Plugin v1.14.16 - 
 https://github.com/igorescobar/jQuery-Mask-Plugin <br>
 PHPMailer - 
